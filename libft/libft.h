@@ -6,7 +6,7 @@
 /*   By: aonaci <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/02 20:41:02 by aonaci            #+#    #+#             */
-/*   Updated: 2015/11/17 20:37:01 by aonaci           ###   ########.fr       */
+/*   Updated: 2015/11/20 19:16:17 by aonaci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,5 +44,6 @@ int		ft_isascii(int c);
 int		ft_isalnum(int c);
 int 	ft_isalpha(int c);
 int		ft_isdigit(int c);
+int		ft_memcmp(const void *s1, const void *s2, size_t n);
 
 #endif
