@@ -6,7 +6,7 @@
 /*   By: aonaci <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/02 21:13:57 by aonaci            #+#    #+#             */
-/*   Updated: 2015/11/20 19:43:36 by aonaci           ###   ########.fr       */
+/*   Updated: 2015/11/21 01:01:17 by aonaci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@
 
 int		main(void)
 {
-	char s1[]=" ";
-	char s2[]="  ";
+	char s1[]="un d9eux";
+	//char s2[]="9";
 
 
 	//ft_atoi(s1);
@@ -37,10 +37,11 @@ int		main(void)
 	
 	/*printf("%s", ft_strstr(s1, s2));*/
 
-	printf("%d\n", ft_strncmp(s1, s2, 30));
+/*	printf("%d\n", ft_strncmp(s1, s2, 30));
 	printf("%d\n", strncmp(s1, s2, 30));
-/*	printf("%s\n", ft_strnstr(s1, s2, 2));
-	printf("%s\n", strnstr(s1, s2, 2));*/
+*/
+	printf("%s\n", ft_strnstr(s1, "9", 3));
+	printf("%s\n", strnstr(s1, "9", 3));
 /*
 	printf("%s\n", strncpy(s1, s2, 20));
 	printf("%s\n", ft_strncpy(s1, s2, 20));
@@ -53,7 +54,25 @@ int		main(void)
 	/*printf("%d\n", ft_isalnum('@'));
 	printf("%d\n", isalnum('+'));*/
 
-		
+/*		
 	printf("%d\n", ft_memcmp(s1, s2, 30));
 	printf("%d\n", memcmp(s1, s2, 30));
+*/
+
+	/*printf("%s\n", ft_strchr(s1, 'r'));
+	printf("%s\n", strchr(s1, 'r'));
+	*/
+/*
+	printf("%s\n", ft_memchr(s1, 'r', 10));
+	printf("%s\n", memchr(s1, 'r', 10));
+*/
+//	printf("%zu", ft_strlen(s1));
+	//printf("%zu\n", ft_strlcat(s1, s2, 100));
+	//printf("%lu\n", strlcat(s1, s2, 100));
+
+
+//	printf("%s\n", ft_memset(s1, 'c', 100));
+//	printf("%s\n", memset(s1, 'c', 100));
+//	printf("%s\n", ft_strrchr(s1, 0));
+//	printf("%s\n", strrchr(s1, 0));
 }

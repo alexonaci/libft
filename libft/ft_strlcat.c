@@ -6,28 +6,28 @@
 /*   By: aonaci <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/02 19:54:10 by aonaci            #+#    #+#             */
-/*   Updated: 2015/11/08 18:06:57 by aonaci           ###   ########.fr       */
+/*   Updated: 2015/11/20 22:57:38 by aonaci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
+#include "libft.h"
 
-size_t		ft_strlcat(char *dest, const char *src, size_t dst_size)
+size_t		ft_strlcat(char *dst, const char *src, size_t size)
 {
 	size_t	i;
-	size_t	j;
+	size_t	d_end;
 
 	i = 0;
-	j = 0;
-	while (dest[j])
-		j++;
-	while (src[i])
+	while (dst[i] && i < size)
+		i++;
+	d_end = i;
+	while (src[i - d_end] && i < size - 1)
 	{
-		if (j < dst_size - 1)
-			dest[j] = src[i];
-		j++;
+		dst[i] = src[i - d_end];
 		i++;
 	}
-	dest[j - 1] = '\0';
-	return (j);
+	if (d_end < size)
+		dst[i] = '\0';
+	return (d_end + ft_strlen(src));
 }

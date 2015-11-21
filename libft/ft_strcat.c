@@ -6,25 +6,25 @@
 /*   By: aonaci <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/02 19:55:10 by aonaci            #+#    #+#             */
-/*   Updated: 2015/11/02 21:35:54 by aonaci           ###   ########.fr       */
+/*   Updated: 2015/11/21 01:14:58 by aonaci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcat(char *dest, const char *src)
+char	*ft_strcat(char *s1, const char *s2)
 {
 	int	i;
 	int	j;
 
 	i = 0;
 	j = 0;
-	while (dest[j])
+	while (s1[j])
 		j++;
-	while (src[i])
+	while (s2[i])
 	{
-		dest[j] = src[i];
+		s1[j] = s2[i];
 		j++;
 		i++;
 	}
-	dest[j] = '\0';
-	return (dest);
+	s1[j] = '\0';
+	return (s1);
 }

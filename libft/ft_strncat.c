@@ -6,27 +6,27 @@
 /*   By: aonaci <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/02 19:29:35 by aonaci            #+#    #+#             */
-/*   Updated: 2015/11/02 20:49:08 by aonaci           ###   ########.fr       */
+/*   Updated: 2015/11/21 01:43:29 by aonaci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 
-char	*ft_strncat(char *dest, const char *src, size_t n)
+char	*ft_strncat(char *s1, const char *s2, size_t n)
 {
 	size_t	i;
 	size_t	j;
 
 	i = 0;
 	j = 0;
-	while (dest[j])
-		j++;
-	while (i < n && src[i])
+	while (s1[i])
+		i++;
+	while (j < n && s2[j])
 	{
-		dest[j] = src[i];
+		s1[i] = s2[j];
 		j++;
 		i++;
 	}
-	dest[j] = '\0';
-	return (dest);
+	s1[i] = '\0';
+	return (s1);
 }

@@ -6,23 +6,21 @@
 /*   By: aonaci <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/10/21 20:40:38 by aonaci            #+#    #+#             */
-/*   Updated: 2015/11/02 21:33:36 by aonaci           ###   ########.fr       */
+/*   Updated: 2015/11/21 01:20:10 by aonaci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 
-void	*ft_memset(void *s, int c, size_t n)
+void	*ft_memset(void *b, int c, size_t len)
 {
-	char	*p;
 	size_t	i;
 
 	i = 0;
-	p = s;
-	while (p[i] && n--)
+	while (i < len)
 	{
-		p[i] = c;
+		*(unsigned char*)(b + i) = (unsigned char)c;
 		i++;
 	}
-	return (s);
+	return (b);
 }
