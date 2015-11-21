@@ -6,7 +6,7 @@
 /*   By: aonaci <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/02 21:13:57 by aonaci            #+#    #+#             */
-/*   Updated: 2015/11/21 01:01:17 by aonaci           ###   ########.fr       */
+/*   Updated: 2015/11/21 05:18:59 by aonaci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@
 
 int		main(void)
 {
-	char s1[]="un d9eux";
-	//char s2[]="9";
+	char s1[]="dsi";
+//	char s2[]="ds";
 
 
 	//ft_atoi(s1);
@@ -40,8 +40,8 @@ int		main(void)
 /*	printf("%d\n", ft_strncmp(s1, s2, 30));
 	printf("%d\n", strncmp(s1, s2, 30));
 */
-	printf("%s\n", ft_strnstr(s1, "9", 3));
-	printf("%s\n", strnstr(s1, "9", 3));
+/*	printf("%s\n", ft_strnstr(s1, "9", 3));
+	printf("%s\n", strnstr(s1, "9", 3));*/
 /*
 	printf("%s\n", strncpy(s1, s2, 20));
 	printf("%s\n", ft_strncpy(s1, s2, 20));
@@ -75,4 +75,6 @@ int		main(void)
 //	printf("%s\n", memset(s1, 'c', 100));
 //	printf("%s\n", ft_strrchr(s1, 0));
 //	printf("%s\n", strrchr(s1, 0));
+//	printf("%d\n", ft_strnequ(s1, s2, 3));
+	ft_putendl(s1);
 }

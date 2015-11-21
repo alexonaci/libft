@@ -6,7 +6,7 @@
 /*   By: aonaci <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/02 20:41:02 by aonaci            #+#    #+#             */
-/*   Updated: 2015/11/21 02:31:12 by aonaci           ###   ########.fr       */
+/*   Updated: 2015/11/21 05:18:36 by aonaci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,5 +46,9 @@ int		ft_isdigit(int c);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 void	*ft_memchr(const void *s, int c, size_t n);
 char	*ft_strrchr(const char *s, int c);
+int		ft_strequ(char const *s1, char const *s2);
+int		ft_strnequ(char const *s1, char const *s2, size_t n);
+void	ft_putendl(char const *s);
+void	ft_putendl_fd(char const *s, int fd);
 
 #endif

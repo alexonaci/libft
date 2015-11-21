@@ -1,37 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*   ft_strequ.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aonaci <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/11/02 20:50:54 by aonaci            #+#    #+#             */
-/*   Updated: 2015/11/21 03:03:22 by aonaci           ###   ########.fr       */
+/*   Created: 2015/11/21 04:53:06 by aonaci            #+#    #+#             */
+/*   Updated: 2015/11/21 05:06:41 by aonaci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 
-char	*ft_strnstr(const char *s1, const char *s2, size_t n)
+int		ft_strequ(char const *s1, char const *s2)
 {
-	size_t	length;
-	size_t	i;
-
-	length = ft_strlen(s2);
-
-	if (!s1 || !s2 || !n || n < length)
-		return (NULL);
-	if (n < length)
-		return (NULL);
-	if (!*s2)
-		return ((char *)s1);
-	i = 0;
-	while (s1[i] && i <= (n - length))
-	{
-		if (ft_strncmp(&s1[i], s2, length) == 0)
-			return ((char *)&s1[i]);
-		i++;
-	}
-	return (NULL);
+	if (ft_strcmp(s1, s2) == 0)
+		return (1);
+	else
+		return (0);
 }
