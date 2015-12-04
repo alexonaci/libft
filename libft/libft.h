@@ -6,7 +6,11 @@
 /*   By: aonaci <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/02 20:41:02 by aonaci            #+#    #+#             */
+<<<<<<< HEAD
 /*   Updated: 2015/12/04 14:22:15 by aonaci           ###   ########.fr       */
+=======
+/*   Updated: 2015/11/27 02:03:03 by aonaci           ###   ########.fr       */
+>>>>>>> 3a529e6a6bf1d99543a1505f75e42f61ae98df6b
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +60,11 @@ char	*ft_strnew(size_t size);
 void	ft_strdel(char **as);
 void	ft_strclr(char *s);
 void	ft_striter(char *s, void (*f)(char *));
+<<<<<<< HEAD
 void	ft_striteri(char *s, void (*f)(unsigned int, char *));
+=======
+void	ft_striteri(char 8s, void (*f)(unsigned int, char *));
+>>>>>>> 3a529e6a6bf1d99543a1505f75e42f61ae98df6b
 char	*ft_strmap(char const *s, char (*f)(char));
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void	ft_putnbr_fd(int n, int fd);
