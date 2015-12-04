@@ -6,7 +6,7 @@
 /*   By: aonaci <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/02 21:13:57 by aonaci            #+#    #+#             */
-/*   Updated: 2015/11/21 05:18:59 by aonaci           ###   ########.fr       */
+/*   Updated: 2015/12/04 14:31:12 by aonaci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 
 int		main(void)
 {
-	char s1[]="dsi";
+	char *s1="dsdasadmmmmkklja";
 //	char s2[]="ds";
 
 
@@ -76,5 +76,9 @@ int		main(void)
 //	printf("%s\n", ft_strrchr(s1, 0));
 //	printf("%s\n", strrchr(s1, 0));
 //	printf("%d\n", ft_strnequ(s1, s2, 3));
-	ft_putendl(s1);
+//	ft_putendl(s1);
+	
+	printf("%s\n", ft_strmap(s1, (char (*) (char))&ft_toupper));
+
+	return (0);
 }
