@@ -65,5 +65,7 @@ void	ft_putnbr_fd(int n, int fd);
 void	ft_putnbr(int n);
 size_t	ft_nbrlen(int n);
 char	*ft_itoa(int n);
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+char	*ft_strsub(char const *s, unsigned int start, size_t len);
 
 #endif

@@ -18,7 +18,7 @@
 
 int		main(void)
 {
-	int s1=123456;
+	char s1[]="DOCUMENTimportant";
 //	char s2[]="ds";
 
 
@@ -79,8 +79,10 @@ int		main(void)
 //	ft_putendl(s1);
 	
 //	printf("%s\n", ft_strmap(s1, (char (*) (char))&ft_toupper));
+//	printf("%s\n", ft_strmapi(s1, (char (*) (unsigned int, char))&ft_tolower));
+	printf("%s\n", ft_strsub(s1, 3, 8));
 
-printf("%s", ft_itoa(s1));
+//printf("%s", ft_itoa(s1));
 
 	return (0);
 }
