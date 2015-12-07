@@ -18,7 +18,7 @@
 
 int		main(void)
 {
-	char *s1="dsdasadmmmmkklja";
+	int s1=123456;
 //	char s2[]="ds";
 
 
@@ -78,7 +78,9 @@ int		main(void)
 //	printf("%d\n", ft_strnequ(s1, s2, 3));
 //	ft_putendl(s1);
 	
-	printf("%s\n", ft_strmap(s1, (char (*) (char))&ft_toupper));
+//	printf("%s\n", ft_strmap(s1, (char (*) (char))&ft_toupper));
+
+printf("%s", ft_itoa(s1));
 
 	return (0);
 }
