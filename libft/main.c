@@ -6,7 +6,7 @@
 /*   By: aonaci <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/02 21:13:57 by aonaci            #+#    #+#             */
-/*   Updated: 2015/12/04 14:31:12 by aonaci           ###   ########.fr       */
+/*   Updated: 2015/12/12 18:07:04 by aonaci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@
 
 int		main(void)
 {
-	char s1[]="DOCUMENTimportant";
-//	char s2[]="ds";
+	char s1[]="DOCUM E N T i   mp or t a n t";
+	//char s2[]="ds";
 
 
 	//ft_atoi(s1);
@@ -80,7 +80,11 @@ int		main(void)
 	
 //	printf("%s\n", ft_strmap(s1, (char (*) (char))&ft_toupper));
 //	printf("%s\n", ft_strmapi(s1, (char (*) (unsigned int, char))&ft_tolower));
-	printf("%s\n", ft_strsub(s1, 3, 8));
+//	printf("%s\n", ft_strsub(s1, 3, 8));
+//	printf("%s\n", *ft_strsplit("*salut*les***etudiants", '*'));
+//	printf("%s\n", ft_strjoin(s1, s2));
+	
+	printf("%s\n", ft_strtrim(s1));
 
 //printf("%s", ft_itoa(s1));
 

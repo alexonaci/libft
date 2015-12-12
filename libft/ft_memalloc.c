@@ -6,20 +6,20 @@
 /*   By: aonaci <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/26 22:18:00 by aonaci            #+#    #+#             */
-/*   Updated: 2015/11/26 22:48:28 by aonaci           ###   ########.fr       */
+/*   Updated: 2015/12/12 15:14:49 by aonaci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 void	*ft_memalloc(size_t size)
 {
-	void 	p;
+	void 	*p;
 
 	p = malloc(size);
-	if (!p)
+	if (p == NULL)
 		return (NULL);
-	else
-		ft_memset(p, '\0', size);
+	ft_memset(p, 0, size);
+	return (p);
 }
 		
