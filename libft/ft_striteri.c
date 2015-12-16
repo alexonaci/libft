@@ -6,7 +6,7 @@
 /*   By: aonaci <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/27 00:40:55 by aonaci            #+#    #+#             */
-/*   Updated: 2015/11/27 00:49:26 by aonaci           ###   ########.fr       */
+/*   Updated: 2015/12/16 17:24:59 by aonaci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 	i = 0;
 	while (*(char *)(s + i))
 	{
-		f(i, &(char *)(s + i));
+		f(i, (char *)(s + i));
 		i++;
 	}
 }

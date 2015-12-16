@@ -6,7 +6,7 @@
 /*   By: aonaci <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/02 21:13:57 by aonaci            #+#    #+#             */
-/*   Updated: 2015/12/12 18:07:04 by aonaci           ###   ########.fr       */
+/*   Updated: 2015/12/16 17:07:13 by aonaci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,8 @@
 
 int		main(void)
 {
-	char s1[]="DOCUM E N T i   mp or t a n t";
+	char s1[]="*the*string*now";
+	//char *word;
 	//char s2[]="ds";
 
 
@@ -85,6 +86,10 @@ int		main(void)
 //	printf("%s\n", ft_strjoin(s1, s2));
 	
 	printf("%s\n", ft_strtrim(s1));
+	
+/*	printf("primu :%s\n", strtok(s1, "*"));
+*	printf("al doilea :%s\n", strtok(NULL, "*"));	
+*/
 
 //printf("%s", ft_itoa(s1));
 

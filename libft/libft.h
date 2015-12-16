@@ -6,7 +6,7 @@
 /*   By: aonaci <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/02 20:41:02 by aonaci            #+#    #+#             */
-/*   Updated: 2015/12/04 14:22:15 by aonaci           ###   ########.fr       */
+/*   Updated: 2015/12/16 17:51:26 by aonaci           ###   ########.fr       */
 /*   Updated: 2015/11/27 02:03:03 by aonaci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
@@ -58,17 +58,17 @@ void	ft_strdel(char **as);
 void	ft_strclr(char *s);
 void	ft_striter(char *s, void (*f)(char *));
 void	ft_striteri(char *s, void (*f)(unsigned int, char *));
-void	ft_striteri(char *s, void (*f)(unsigned int, char *));
 char	*ft_strmap(char const *s, char (*f)(char));
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void	ft_putnbr_fd(int n, int fd);
 void	ft_putnbr(int n);
+void	ft_putnbr_fd(int n, int fd);
 size_t	ft_nbrlen(int n);
 char	*ft_itoa(int n);
-char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char	*ft_strsub(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s);
 char	**ft_strsplit(char const *s, char c);
-
+void	ft_putstr_fd(const char *s, int fd);
+void	ft_putchar_fd(char c, int fd);
 #endif

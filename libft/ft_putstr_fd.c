@@ -6,18 +6,18 @@
 /*   By: aonaci <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/21 03:01:20 by aonaci            #+#    #+#             */
-/*   Updated: 2015/11/21 03:13:49 by aonaci           ###   ########.fr       */
+/*   Updated: 2015/12/16 17:59:28 by aonaci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_putstr_fd(const char *s, int fd)
+void	ft_putstr_fd(const char *s, int fd)
 {
 	int		i;
 
 	i = 0;
-	while (s[i])
+	while (s[i] != 0)
 	{
 		ft_putchar_fd(s[i], fd);
 		i++;

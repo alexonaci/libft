@@ -6,11 +6,13 @@
 /*   By: aonaci <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/26 23:20:53 by aonaci            #+#    #+#             */
-/*   Updated: 2015/11/26 23:26:12 by aonaci           ###   ########.fr       */
+/*   Updated: 2015/12/16 17:17:34 by aonaci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	t_strdel(char **as)
+#include "libft.h"
+
+void	ft_strdel(char **as)
 {
 	free(*as);
 	*as = NULL;
