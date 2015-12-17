@@ -1,18 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aonaci <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/12/16 17:38:30 by aonaci            #+#    #+#             */
-/*   Updated: 2015/12/17 16:20:16 by aonaci           ###   ########.fr       */
+/*   Created: 2015/12/17 16:45:18 by aonaci            #+#    #+#             */
+/*   Updated: 2015/12/17 17:46:28 by aonaci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void		ft_putnbr_fd(int n, int fd)
+t_list		*ft_lstnew(void const *content, size_t content_size)
 {
-	ft_putstr_fd(ft_itoa(n), fd);
+	t_list	*tmp;
+
+
+	return (tmp);
 }

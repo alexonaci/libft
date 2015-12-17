@@ -6,7 +6,7 @@
 /*   By: aonaci <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/02 20:41:02 by aonaci            #+#    #+#             */
-/*   Updated: 2015/12/16 17:51:26 by aonaci           ###   ########.fr       */
+/*   Updated: 2015/12/17 16:47:28 by aonaci           ###   ########.fr       */
 /*   Updated: 2015/11/27 02:03:03 by aonaci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
@@ -71,4 +71,12 @@ char	*ft_strtrim(char const *s);
 char	**ft_strsplit(char const *s, char c);
 void	ft_putstr_fd(const char *s, int fd);
 void	ft_putchar_fd(char c, int fd);
+typedef	struct		s_list
+{
+	void			*content;
+	size_t			content_size;
+	struct	s_list	*next;
+}					t_list;
+t_list	*ft_lstnew(void	const *content, size_t content_size);
+
 #endif
