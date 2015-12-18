@@ -6,7 +6,7 @@
 /*   By: aonaci <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/26 23:28:24 by aonaci            #+#    #+#             */
-/*   Updated: 2015/12/12 17:59:04 by aonaci           ###   ########.fr       */
+/*   Updated: 2015/12/18 11:23:43 by aonaci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strnew(size_t size)
 {
 	int		i;
 	char	*str;
-		
+
 	i = 0;
 	str = (char*)(malloc(sizeof(char) * size + 1));
 	if (!str)

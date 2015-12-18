@@ -6,7 +6,7 @@
 /*   By: aonaci <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/26 22:18:00 by aonaci            #+#    #+#             */
-/*   Updated: 2015/12/12 15:14:49 by aonaci           ###   ########.fr       */
+/*   Updated: 2015/12/18 10:56:15 by aonaci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memalloc(size_t size)
 {
-	void 	*p;
+	void	*p;
 
 	p = malloc(size);
 	if (p == NULL)
@@ -22,4 +22,3 @@ void	*ft_memalloc(size_t size)
 	ft_memset(p, 0, size);
 	return (p);
 }
-		

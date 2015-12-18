@@ -6,7 +6,7 @@
 /*   By: aonaci <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/12 14:24:47 by aonaci            #+#    #+#             */
-/*   Updated: 2015/12/16 17:06:14 by aonaci           ###   ########.fr       */
+/*   Updated: 2015/12/18 11:24:10 by aonaci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,8 +60,8 @@ char		**ft_strsplit(char const *s, char c)
 	size_t	len;
 
 	len = ft_count_words(s, c);
-	ret = (char**) ft_memalloc(sizeof(char*) * (len + 1));
-	ptr = (char*) s;
+	ret = (char**)ft_memalloc(sizeof(char*) * (len + 1));
+	ptr = (char*)s;
 	p_ret = ret;
 	while (ptr && *ptr)
 	{

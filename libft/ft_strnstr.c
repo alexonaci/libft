@@ -6,7 +6,7 @@
 /*   By: aonaci <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/02 20:50:54 by aonaci            #+#    #+#             */
-/*   Updated: 2015/11/21 03:03:22 by aonaci           ###   ########.fr       */
+/*   Updated: 2015/12/18 11:16:20 by aonaci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@ char	*ft_strnstr(const char *s1, const char *s2, size_t n)
 	size_t	i;
 
 	length = ft_strlen(s2);
-
 	if (!s1 || !s2 || !n || n < length)
 		return (NULL);
 	if (n < length)
