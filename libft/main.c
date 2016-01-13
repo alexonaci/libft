@@ -18,7 +18,8 @@
 
 int		main(void)
 {
-	char a[]="11";
+//	char a[]="11";
+    
 
 	//char s1[]="*the*string*now";
 	//char *word;
@@ -88,11 +89,23 @@ int		main(void)
 //	printf("%s\n", ft_strjoin(s1, s2));
 	
 	//printf("%d\n", ft_strtrim(s1));
-	printf("%d", ft_atoi(a));
+//	printf("%d", ft_atoi(a));
 /*	printf("primu :%s\n", strtok(s1, "*"));
 *	printf("al doilea :%s\n", strtok(NULL, "*"));	
 */
+  /*  struct s_list;
+    t_list node;
+    */typedef struct mystruct
+    {
+        int     data;
+        char    nume;
+    }   t_mystruct;
+   /* t_mystruct    datastruct;
+    node->content = &datastruct;
+    ((t_mystruct *)node->content)->data = 1000;*/
+    
 
+   // printf("%d", head->content);
 //printf("%s", ft_itoa(s1));
 
 	return (0);
